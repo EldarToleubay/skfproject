@@ -1,0 +1,186 @@
+/* Общие стили */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f8f9fa;
+    padding-top: 60px; /* Чтобы контент не прилипал к фиксированному меню */
+}
+
+/* Фиксированное меню */
+#menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: #007bff;
+    padding: 15px 0;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+}
+
+#menu li {
+    display: inline;
+}
+
+#menu a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px;
+    transition: 0.3s;
+}
+
+#menu a:hover {
+    color: #d4e3ff;
+}
+
+/* Контейнер */
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 20px;
+}
+
+/* Авторизация */
+#auth-section {
+    max-width: 400px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+#auth-section h2 {
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+#auth-form input {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#auth-form button {
+    width: 100%;
+    background: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#auth-form button:hover {
+    background: #0056b3;
+}
+
+.error {
+    color: red;
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Раздел новостей и документов */
+.hidden {
+    display: none;
+}
+
+.news-form, .document-form {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    margin-bottom: 20px;
+}
+
+.news-form h2, .document-form h2 {
+    margin-bottom: 15px;
+}
+
+#news-form input, #document-form input, #document-form select {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+#quill-editor {
+    height: 150px;
+    border: 1px solid #ddd;
+    margin-bottom: 10px;
+}
+
+button {
+    background: #007bff;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #0056b3;
+}
+
+/* Списки новостей и документов */
+.news-list, .document-list {
+    background: white;
+    padding: 20px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+}
+
+.news-list h2, .document-list h2 {
+    margin-bottom: 15px;
+}
+
+#news-container, #documents-container {
+    list-style: none;
+}
+
+#news-container li, #documents-container li {
+    background: #f1f1f1;
+    margin: 10px 0;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* Кнопка выхода */
+.logout-btn {
+    display: block;
+    margin: 10px auto;
+    background: #dc3545;
+}
+
+.logout-btn:hover {
+    background: #c82333;
+}
+
+/* Пагинация */
+#pagination-container {
+    text-align: center;
+    margin-top: 20px;
+}
+
+#pagination-container button {
+    margin: 5px;
+}

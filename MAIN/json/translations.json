@@ -1,0 +1,41 @@
+{
+  "ru": {
+    "about": "О нас",
+    "documents": "Учредительные документы",
+    "financial": "Финансовая отчетность",
+    "news": "Существенные факты",
+    "emission": "Эмиссионная документация",
+    "contacts": "Контакты",
+    "contact_us": "Контакты компании",
+    "work_hours": "График работы: Пн-Пт, 9:00 - 18:00",
+    "email": "Email",
+    "phone": "Телефон",
+    "rights": "Все права защищены."
+  },
+  "en": {
+    "about": "About Us",
+    "documents": "Constitutional Documents",
+    "financial": "Financial Reports",
+    "news": "Material Facts",
+    "emission": "Issuance Documentation",
+    "contacts": "Contacts",
+    "contact_us": "Company Contacts",
+    "work_hours": "Working Hours: Mon-Fri, 9:00 AM - 6:00 PM",
+    "email": "Email",
+    "phone": "Phone",
+    "rights": "All rights reserved."
+  },
+  "kz": {
+    "about": "Біз туралы",
+    "documents": "Құрылтай құжаттары",
+    "financial": "Қаржылық есеп",
+    "news": "Маңызды фактілер",
+    "emission": "Эмиссиялық құжаттама",
+    "contacts": "Байланыс",
+    "contact_us": "Компания байланысы",
+    "work_hours": "Жұмыс уақыты: Дүйсенбі-жұма, 9:00 - 18:00",
+    "email": "Электрондық пошта",
+    "phone": "Телефон",
+    "rights": "Барлық құқықтар қорғалған."
+  }
+}

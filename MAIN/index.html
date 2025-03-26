@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Мой сайт</title>
+    <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
+</head>
+<body>
+
+<header>
+    <div class="header-container">
+        <div class="menu-toggle">&#9776;</div>
+        <div class="logo">
+        </div>
+        <nav class="nav-menu">
+            <ul>
+                <li><a href="#about" data-i18n="about">О нас</a></li>
+                <li><a href="#documents" data-i18n="documents">Учредительные документы</a></li>
+                <li><a href="#financial" data-i18n="financial">Финансовая отчетность</a></li>
+                <li><a href="#news" data-i18n="news">Существенные факты</a></li>
+                <li><a href="#emission" data-i18n="emission">Эмиссионная документация</a></li>
+                <li><a href="#contacts" data-i18n="contacts">Контакты</a></li>
+            </ul>
+        </nav>
+        <div class="header-right">
+            <div class="language">
+                <select>
+                    <option value="ru">Рус</option>
+                    <option value="en">Eng</option>
+                    <option value="kz">Қаз</option>
+                </select>
+            </div>
+            <div class="contacts">
+                <p>Контакты</p>
+                <p>почта: <a href="mailto:info@smkff.kz">info@smkff.kz</a></p>
+                <p>телефон: <a href="tel:+77273993161">+7 (727) 399 31 61</a></p>
+            </div>
+
+        </div>
+    </div>
+</header>
+
+<!-- Боковое меню -->
+<div class="sidebar">
+    <button class="close-menu">&times;</button>
+    <ul>
+        <li><a href="#about" data-i18n="about">О нас</a></li>
+        <li><a href="#documents" data-i18n="documents">Учредительные документы</a></li>
+        <li><a href="#financial" data-i18n="financial">Финансовая отчетность</a></li>
+        <li><a href="#news" data-i18n="news">Существенные факты</a></li>
+        <li><a href="#emission" data-i18n="emission">Эмиссионная документация</a></li>
+        <li><a href="#contacts" data-i18n="contacts">Контакты</a></li>
+    </ul>
+</div>
+
+<main>
+    <section id="about">
+        <details>
+            <summary>
+                О нас
+                <span class="toggle-icon">▼</span>
+            </summary>
+            <div class="content">
+                <h2>Кто мы?</h2>
+                <p>Описание компании и её миссии.</p>
+                <h2>Что мы делаем?</h2>
+                <p>Описание деятельности компании.</p>
+                <h2>Наши цели</h2>
+                <div class="goals">
+                    <div class="goal">Цель 1</div>
+                    <div class="goal">Цель 2</div>
+                    <div class="goal">Цель 3</div>
+                </div>
+                <h2>Наши принципы</h2>
+                <p>Описание принципов компании с иконками.</p>
+            </div>
+        </details>
+    </section>
+
+    <!-- Раздел "Учредительные документы" -->
+    <section id="documents">
+        <details>
+            <summary>
+                Учредительные документы
+                <span class="toggle-icon">▼</span>
+            </summary>
+            <div class="content">
+                <ul id="documents-list">
+                    <!-- Документы будут загружены через JS -->
+                </ul>
+            </div>
+        </details>
+    </section>
+
+
+    <!-- Раздел "Финансовая отчетность" -->
+    <section id="financial">
+        <details>
+            <summary>
+                Финансовая отчетность
+                <span class="toggle-icon">▼</span>
+            </summary>
+            <div class="content">
+                <ul>
+                    <li><a href="#">Отчет за 2023 год</a></li>
+                    <li><a href="#">Отчет за 2022 год</a></li>
+                </ul>
+            </div>
+        </details>
+    </section>
+
+
+    <section id="news">
+        <details class="facts-details">
+            <summary>
+                Существенные факты
+                <span class="toggle-icon">▼</span>
+            </summary>
+            <div class="content">
+                <ul id="news-list" class="news-list">
+                    <li>
+                        <span class="news-date">27.02.25 11:34</span>
+                        <a href="#">Изменен состав Совета директоров</a>
+                    </li>
+                    <li>
+                        <span class="news-date">15.03.25 09:20</span>
+                        <a href="#">Новая стратегия развития компании</a>
+                    </li>
+                </ul>
+                <!-- Добавляем кнопки пагинации ПОД списком новостей -->
+                <div class="pagination">
+                    <button id="prev-page">Предыдущая</button>
+                    <span id="page-info">Страница 1</span>
+                    <button id="next-page">Следующая</button>
+                </div>
+            </div>
+        </details>
+    </section>
+
+
+    <!-- Раздел "Эмиссионная документация" -->
+    <section id="emission">
+        <details>
+            <summary>
+                Эмиссионная документация
+                <span class="toggle-icon">▼</span>
+            </summary>
+            <div class="content">
+                <ul>
+                    <li><a href="#">Документ эмиссии 1</a></li>
+                    <li><a href="#">Документ эмиссии 2</a></li>
+                </ul>
+            </div>
+        </details>
+    </section>
+
+    <!-- Раздел "Контакты" -->
+    <section id="contacts">
+        <details>
+            <summary>
+                Контакты
+                <span class="toggle-icon">▼</span>
+            </summary>
+            <div class="content">
+                <div class="contact-block">
+                    <h3>Контакты компании</h3>
+                    <p>Адрес: ул. Примерная, 123, г. Алматы</p>
+                    <p>График работы: Пн-Пт, 9:00 - 18:00</p>
+                    <p>Email: <a href="mailto:info@smkff.kz">info@smkff.kz</a></p>
+                    <p>Телефон: <a href="tel:+77273993161">+7 (727) 399 31 61</a></p>
+                    <div class="social">
+                        <a href="#">Instagram</a>
+                        <a href="#">Telegram</a>
+                        <a href="#">Whatsapp</a>
+                    </div>
+                </div>
+                <div class="contact-block">
+                    <h3>Контакты организатора</h3>
+                    <p>Наименование контакта: Организатор 1</p>
+                    <p>Email: <a href="mailto:organizer1@example.com">organizer1@example.com</a></p>
+                    <p>Телефон: <a href="tel:+77001234567">+7 (700) 123-45-67</a></p>
+                </div>
+            </div>
+        </details>
+    </section>
+
+
+
+
+</main>
+
+<footer>
+    <p>&copy; 2025 Все права защищены.</p>
+</footer>
+<div id="pdf-viewer-container">
+    <div id="pdf-viewer">
+        <button id="close-pdf-viewer" class="close-btn">&times;</button>
+        <canvas id="pdf-canvas"></canvas>
+        <div class="pdf-controls">
+            <button id="prev-page-pdf" class="pdf-btn">⮜ Предыдущая</button>
+            <span id="page-number-pdf">1 / 1</span>
+            <button id="next-page-pdf" class="pdf-btn">Следующая ⮞</button>
+        </div>
+    </div>
+</div>
+
+
+
+<!-- Подключение библиотеки pdf.js -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdf.js/3.11.174/pdf.min.js"></script>
+<script defer src="script.js"></script>
+</body>
+</html>
